@@ -1,0 +1,15 @@
+---
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: eksworkshop-eksctl
+  region: $AWS_REGION
+  version: "1.21"
+  tags:
+    karpenter.sh/discovery: eksworkshop-eksctl
+
+availabilityZones: ["$AZ0", "$AZ1", "$AZ2"]
+
+iam:
+  withOIDC: true
