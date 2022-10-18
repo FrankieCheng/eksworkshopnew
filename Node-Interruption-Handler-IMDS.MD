@@ -11,7 +11,7 @@ https://github.com/aws/aws-node-termination-handler#installation-and-configurati
 ## 1.Install NTH
 *Run the command.
 ```bash
-. ~/environment/eksworkshopguide/eks-spot-node-interruption-handler-imds.sh
+. ~/environment/eksworkshopnew/eks-spot-node-interruption-handler-imds.sh
 ```
 Then find the spot instance node.
 ```bash

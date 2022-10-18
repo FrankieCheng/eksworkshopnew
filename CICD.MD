@@ -1,6 +1,6 @@
 ## 1. Create Multi-Arch Docker file (about 20 mins)
 ```bash
-. ~/environment/eksworkshopguide/eks-graviton2-cicd.sh
+. ~/environment/eksworkshopnew/eks-graviton2-cicd.sh
 
 ```
 [eks-graviton2-cicd](./eks-graviton2-cicd.sh)

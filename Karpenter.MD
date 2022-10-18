@@ -1,7 +1,7 @@
 ## 1.Install Helm and setup Karpenter.
 * In the cloud9 terminal, run the command on terminal.
 ```bash
-. eksworkshopguide/eks-karpenter.sh
+. eksworkshopnew/eks-karpenter.sh
 
 ```
 [eks-karpenter.sh](eks-karpenter.sh)
@@ -12,7 +12,7 @@
 * Scale the deployment to 5.
 * Check the karpenter status.
 ```bash
-kubectl apply -f ~/environment/eksworkshopguide/yamls/karpenter-usage-1.yaml
+kubectl apply -f ~/environment/eksworkshopnew/yamls/karpenter-usage-1.yaml
 kubectl scale deployment inflate --replicas 5
 kubectl logs -f -n karpenter -l app.kubernetes.io/name=karpenter -c controller
 

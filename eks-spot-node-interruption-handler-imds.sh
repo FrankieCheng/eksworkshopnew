@@ -1,9 +1,9 @@
 #!/bin/bash
 #AWS Node Termination Handler on EKS - Using IMDS
-sed 's/$AWS_REGION/'"${AWS_REGION}"'/g' eksworkshopguide/yamls/ekscluster-unamanged-nodegroup-spot-template.yaml > eksworkshopguide/yamls/ekscluster-unamanged-nodegroup-spot.yaml
+sed 's/$AWS_REGION/'"${AWS_REGION}"'/g' eksworkshopnew/yamls/ekscluster-unamanged-nodegroup-spot-template.yaml > eksworkshopnew/yamls/ekscluster-unamanged-nodegroup-spot.yaml
 
 # create a nodegroup with spot.
-eksctl create nodegroup -f eksworkshopguide/yamls/ekscluster-unamanged-nodegroup-spot.yaml
+eksctl create nodegroup -f eksworkshopnew/yamls/ekscluster-unamanged-nodegroup-spot.yaml
 
 #install node interruption handler (IMDS)
 kubectl apply -f https://github.com/aws/aws-node-termination-handler/releases/download/v1.17.3/all-resources.yaml

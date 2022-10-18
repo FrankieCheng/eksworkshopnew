@@ -16,8 +16,8 @@
 
 ```bash
 git clone https://github.com/FrankieCheng/eksworkshopnew
-chmod +755 eksworkshopguide/*.sh
-. eksworkshopguide/eks-workshop-create-cluster.sh
+chmod +755 eksworkshopnew/*.sh
+. eksworkshopnew/eks-workshop-create-cluster.sh
 
 ```
 [eks-workshop-create-cluster](./eks-workshop-create-cluster.sh)

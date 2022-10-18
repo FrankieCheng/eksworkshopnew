@@ -70,16 +70,16 @@ eksctl completion bash >> ~/.bash_completion
 . ~/.bash_completion
 
 # replace parameters.
-sed 's/$AWS_REGION/'"${AWS_REGION}"'/g;s/$AZ0/'"${AZS[0]}"'/g;s/$AZ1/'"${AZS[1]}"'/g;s/$AZ2/'"${AZS[2]}"'/g' eksworkshopguide/yamls/ekscluster-template.yaml > eksworkshopguide/yamls/ekscluster.yaml
+sed 's/$AWS_REGION/'"${AWS_REGION}"'/g;s/$AZ0/'"${AZS[0]}"'/g;s/$AZ1/'"${AZS[1]}"'/g;s/$AZ2/'"${AZS[2]}"'/g' eksworkshopnew/yamls/ekscluster-template.yaml > eksworkshopnew/yamls/ekscluster.yaml
 
 # create cluster.
-eksctl create cluster -f eksworkshopguide/yamls/ekscluster.yaml
+eksctl create cluster -f eksworkshopnew/yamls/ekscluster.yaml
 
 #replace the parameter for nodegroup template.
-sed 's/$AWS_REGION/'"${AWS_REGION}"'/g' eksworkshopguide/yamls/ekscluster-nodegroup-template.yaml > eksworkshopguide/yamls/ekscluster-nodegroup.yaml
+sed 's/$AWS_REGION/'"${AWS_REGION}"'/g' eksworkshopnew/yamls/ekscluster-nodegroup-template.yaml > eksworkshopnew/yamls/ekscluster-nodegroup.yaml
 
 # create nodegroup.
-eksctl create nodegroup --config-file eksworkshopguide/yamls/ekscluster-nodegroup.yaml
+eksctl create nodegroup --config-file eksworkshopnew/yamls/ekscluster-nodegroup.yaml
 
 kubectl get nodes # if we see our 3 nodes, we know we have authenticated correctly
 

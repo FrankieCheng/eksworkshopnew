@@ -73,4 +73,4 @@ helm upgrade --install --namespace karpenter --create-namespace \
   --wait # for the defaulting webhook to install before creating a Provisioner
 
 #setup karpenter provisioner.
-kubectl apply -f eksworkshopguide/yamls/karpenter-provisioner.yaml
+kubectl apply -f eksworkshopnew/yamls/karpenter-provisioner.yaml

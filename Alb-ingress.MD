@@ -5,11 +5,11 @@ helm version --short
 ```
 If helm is not installed, use the following command to install it first.
 ```bash
-. ~/environment/eksworkshopguide/eks-helm.sh
+. ~/environment/eksworkshopnew/eks-helm.sh
 ```
 After install helm, you can install alb ingress controller.
 ```bash
-. ~/environment/eksworkshopguide/eks-ingress-alb.sh
+. ~/environment/eksworkshopnew/eks-ingress-alb.sh
 
 ```
 Install ingress alb controller.
@@ -20,7 +20,7 @@ Install ingress alb controller.
 ## 2.Deploy game 2048.
 *Run the command.
 ```bash
-. ~/environment/eksworkshopguide/eks-ingress-alb-2048.sh
+. ~/environment/eksworkshopnew/eks-ingress-alb-2048.sh
 
 ```
 * You can see the console print alb url, paste the url in the browser to enjoy your game.

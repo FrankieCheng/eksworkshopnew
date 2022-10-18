@@ -15,10 +15,10 @@ echo $CONTAINER_URI
 #check the node arch.
 kubectl get nodes --label-columns=kubernetes.io/arch
 #replace parameters
-sed "s#{{container_uri}}#$CONTAINER_URI#" ~/environment/eksworkshopguide/yamls/multi-arch-template.yaml > ~/environment/eksworkshopguide/yamls/multi-arch.yaml
+sed "s#{{container_uri}}#$CONTAINER_URI#" ~/environment/eksworkshopnew/yamls/multi-arch-template.yaml > ~/environment/eksworkshopnew/yamls/multi-arch.yaml
 
 #deploy the multi arch application.
-kubectl apply -f ~/environment/eksworkshopguide/yamls/multi-arch.yaml
+kubectl apply -f ~/environment/eksworkshopnew/yamls/multi-arch.yaml
 
 #check the pods status.
 kubectl get pods -o wide 

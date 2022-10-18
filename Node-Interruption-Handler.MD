@@ -11,16 +11,16 @@ https://github.com/aws/aws-node-termination-handler#installation-and-configurati
 ## 1. Create SQS (about 5 mins)
 * Create SQS.
 ```bash
-. ~/environment/eksworkshopguide/eks-spot-node-interruption-handler-1-sqs.sh
+. ~/environment/eksworkshopnew/eks-spot-node-interruption-handler-1-sqs.sh
 ```
 
 ## 2.Setup EventBridge
 *Run the command.
 ```bash
-. ~/environment/eksworkshopguide/eks-spot-node-interruption-handler-2-eventbridge.sh
+. ~/environment/eksworkshopnew/eks-spot-node-interruption-handler-2-eventbridge.sh
 ```
 ## 3.Install NTH
 *Run the command.
 ```bash
-. ~/environment/eksworkshopguide/eks-spot-node-interruption-handler-3-nth.sh
+. ~/environment/eksworkshopnew/eks-spot-node-interruption-handler-3-nth.sh
 ```

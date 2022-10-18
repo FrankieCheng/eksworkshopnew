@@ -1,4 +1,4 @@
-# eksworkshopguide
+# eksworkshopnew
 ## 1.Following the guide [Init](Init.MD) to setup the EKS cluster. ---(Time: about 25 mins)
 * Create a role
 * Install Kubectl

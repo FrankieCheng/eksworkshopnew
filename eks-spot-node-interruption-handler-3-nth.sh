@@ -1,8 +1,8 @@
 #!/bin/bash
 #AWS Node Termination Handler on EKS - Using Queue Processor (requires AWS IAM Permissions)
 ## install nth.
-#sed 's/$AWS_REGION/'"${AWS_REGION}"'/g;s/$ACCOUNT_ID/'"${ACCOUNT_ID}"'/g;s/$SQS_QUEUE_NAME/'"${SQS_QUEUE_NAME}"'/g;' eksworkshopguide/yamls/all-resources-queue-processor-template.yaml > eksworkshopguide/yamls/all-resources-queue-processor.yaml
-#kubectl apply -f eksworkshopguide/yamls/all-resources-queue-processor.yaml
+#sed 's/$AWS_REGION/'"${AWS_REGION}"'/g;s/$ACCOUNT_ID/'"${ACCOUNT_ID}"'/g;s/$SQS_QUEUE_NAME/'"${SQS_QUEUE_NAME}"'/g;' eksworkshopnew/yamls/all-resources-queue-processor-template.yaml > eksworkshopnew/yamls/all-resources-queue-processor.yaml
+#kubectl apply -f eksworkshopnew/yamls/all-resources-queue-processor.yaml
 read -r -d '' aws_node_termination_handler_policy <<EOF
 {
     "Version": "2012-10-17",
